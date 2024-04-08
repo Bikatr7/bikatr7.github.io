@@ -1,0 +1,12 @@
+title: Bikatr7's personal portfolio
+email: bikatr7@proton.me
+description: >- # this means to ignore newlines until "baseurl:"
+  A look into my personal projects and experiences.
+baseurl: ""
+url: "https://bikatr7.github.io/"
+github_username:  bikatr7
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
