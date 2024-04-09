@@ -1,3 +1,14 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 /* Reset default padding and margin for various elements */
 body, h1, h2, h3, p, ul, li {
   margin: 0;
@@ -6,11 +17,13 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   overflow-x: hidden; /* Prevent horizontal overflow */
+  background-color: #121212; /* Dark background for the body */
+  color: #ffffff; /* Light text color for good contrast */
 }
 
 /* Style for the header */
 header {
-  background-color: #f8f9fa; /* Light grey background */
+  background-color: #1c1c1c; /* Slightly lighter dark shade for the header */
   display: flex;
   justify-content: center; /* Center the navigation items */
   padding: 1rem 0; /* Add some padding above and below the links */
@@ -27,25 +40,22 @@ header nav ul {
 }
 
 header nav ul li a {
-  text-decoration: none; /* Remove the underline from links */
-  color: #007bff; /* Set a blue color for the links */
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* White color for the links */
   font-weight: bold; /* Make the font bold */
 }
 
 /* Style for the main content area */
 .container {
-  padding-top: 3rem; /* Add padding to the top to account for the fixed header */
-  padding-bottom: 3rem; /* Add padding to the bottom to account for the fixed footer */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-top: 60px; /* Adjust this value based on your header's height */
-  margin-bottom: 60px; /* Adjust this value based on your footer's height */
-  min-height: calc(100vh - 120px); /* Adjust this calculation based on header and footer */
 }
 
 /* Style for the footer */
 footer {
-  background-color: #f8f9fa; /* Light grey background */
+  background-color: #1c1c1c; /* Same as header for consistency */
   position: fixed; /* Fixed position at the bottom of the page */
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Full width */
@@ -54,7 +64,7 @@ footer {
   z-index: 100; /* Ensures footer is above other elements */
 }
 
+/* Adjust the footer link colors for better visibility */
 footer a {
-  text-decoration: none; /* Remove the underline from links */
-  color: #007bff; /* Set a blue color for the links */
+  color: #ffffff; /* White color for the links */
 }
