@@ -1,0 +1,60 @@
+/* Reset default padding and margin for various elements */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Style for the header */
+header {
+  background-color: #f8f9fa; /* Light grey background */
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  padding: 1rem 0; /* Add some padding above and below the links */
+  position: fixed; /* Fixed position at the top of the page */
+  top: 0; /* Stick to the top */
+  width: 100%; /* Full width */
+  z-index: 100; /* Ensures header is above other elements */
+}
+
+header nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex;
+  gap: 2rem; /* Space out the navigation items */
+}
+
+header nav ul li a {
+  text-decoration: none; /* Remove the underline from links */
+  color: #007bff; /* Set a blue color for the links */
+  font-weight: bold; /* Make the font bold */
+}
+
+/* Style for the main content area */
+.container {
+  padding-top: 3rem; /* Add padding to the top to account for the fixed header */
+  padding-bottom: 3rem; /* Add padding to the bottom to account for the fixed footer */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 60px; /* Adjust this value based on your header's height */
+  margin-bottom: 60px; /* Adjust this value based on your footer's height */
+  min-height: calc(100vh - 120px); /* Adjust this calculation based on header and footer */
+}
+
+/* Style for the footer */
+footer {
+  background-color: #f8f9fa; /* Light grey background */
+  position: fixed; /* Fixed position at the bottom of the page */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+  padding: 1rem; /* Add some padding */
+  text-align: center; /* Center the text */
+  z-index: 100; /* Ensures footer is above other elements */
+}
+
+footer a {
+  text-decoration: none; /* Remove the underline from links */
+  color: #007bff; /* Set a blue color for the links */
+}
