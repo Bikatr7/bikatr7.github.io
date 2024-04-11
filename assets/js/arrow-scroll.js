@@ -18,6 +18,3 @@ window.addEventListener('scroll', function() {
     scrollArrow.style.display = 'none';
   }
 });
-
-// initially hide the scroll arrow
-scrollArrow.style.display = 'none';
