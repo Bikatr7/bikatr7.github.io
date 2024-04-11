@@ -17,19 +17,19 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   overflow-x: hidden; /* Prevent horizontal overflow */
-  background-color: #121212; /* Dark background for the body */
-  color: #ffffff; /* Light text color for good contrast */
+  background-color: #121212; 
+  color: #ffffff; 
 }
 
 /* Style for the header */
 header {
-  background-color: #1c1c1c; /* Slightly lighter dark shade for the header */
+  background-color: #1c1c1c; 
   display: flex;
-  justify-content: center; /* Center the navigation items */
+  justify-content: center; 
   padding: 1rem 0; /* Add some padding above and below the links */
-  position: fixed; /* Fixed position at the top of the page */
+  position: fixed;
   top: 0; /* Stick to the top */
-  width: 100%; /* Full width */
+  width: 100%; 
   z-index: 100; /* Ensures header is above other elements */
 }
 
@@ -41,8 +41,8 @@ header nav ul {
 
 header nav ul li a {
   text-decoration: none; /* Remove underline from links */
-  color: #ffffff; /* White color for the links */
-  font-weight: bold; /* Make the font bold */
+  color: #ffffff; 
+  font-weight: bold;
 }
 
 /* Style for the main content area */
@@ -55,16 +55,16 @@ header nav ul li a {
 
 /* Style for the footer */
 footer {
-  background-color: #1c1c1c; /* Same as header for consistency */
-  position: fixed; /* Fixed position at the bottom of the page */
+  background-color: #1c1c1c;
+  position: fixed;
   bottom: 0; /* Stick to the bottom */
-  width: 100%; /* Full width */
-  padding: 1rem; /* Add some padding */
-  text-align: center; /* Center the text */
+  width: 100%; 
+  padding: 1rem; 
+  text-align: center;
   z-index: 100; /* Ensures footer is above other elements */
 }
 
 /* Adjust the footer link colors for better visibility */
 footer a {
-  color: #ffffff; /* White color for the links */
+  color: #ffffff;
 }
