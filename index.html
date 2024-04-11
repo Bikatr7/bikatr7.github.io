@@ -11,6 +11,10 @@ permalink: /
   <p>Otherwise see the About Me page <a href="/about/">here</a>.</p>
   <p>Or check out the Contact page <a href="/contact/">here</a>.</p>
 
+
+<img id="scroll-arrow" src="assets/images/down-purple-arrow.png" alt="Click to scroll down to bottom of home page">
+
+
 <div class="project-carousel">
     <!-- Project Slide 1 -->
     <div class="project-slide active">
@@ -58,6 +62,7 @@ permalink: /
 </div>
 
 <script src="{{ 'assets/js/carousel.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/arrow-scroll.js' | relative_url }}"></script>
 
 <style>
 /*Introduction Styles*/
@@ -67,6 +72,14 @@ permalink: /
   padding: 2rem;
   text-align: left;
   color: #ffffff; 
+  }
+
+  #scroll-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, +90%);
+  cursor: pointer;
   }
 
 /* General Carousel Styles */
