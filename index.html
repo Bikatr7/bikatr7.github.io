@@ -4,6 +4,13 @@ title: Home
 permalink: /
 ---
 
+<div class="home-page">
+  <h1>Welcome to My Portfolio</h1>
+  <p>On the home page you will find my projects!</p>
+  <p>Scroll down for that!</p>
+  <p>Otherwise see the About Me page <a href="/about/">here</a>.</p>
+  <p>Or check out the Contact page <a href="/contact/">here</a>.</p>
+
 <div class="project-carousel">
     <!-- Project Slide 1 -->
     <div class="project-slide active">
@@ -53,11 +60,20 @@ permalink: /
 <script src="{{ 'assets/js/carousel.js' | relative_url }}"></script>
 
 <style>
+/*Introduction Styles*/
+.home-page {
+  max-width: 800px; 
+  margin: 0 auto; /* This centers the .about-page block */
+  padding: 2rem;
+  text-align: left;
+  color: #ffffff; 
+  }
+
 /* General Carousel Styles */
 .project-carousel {
   width: 100%;
   position: relative;
-  max-width: 800px; /* Set a max-width for the carousel */
+  max-width: 800px; 
   margin: auto;
 }
 
@@ -71,7 +87,7 @@ permalink: /
 
 .project-description {
     text-align: center;
-    padding-top: 20px; /* adjust as needed */
+    padding-top: 20px; 
 }
 
 /* Image Carousel & Slide Styles */
@@ -82,7 +98,7 @@ permalink: /
 
 .image-slide {
   display: none;
-  margin-bottom: 20px; /* Space for the image navigation buttons */
+  margin-bottom: 20px;
 }
 
 .image-slide.active {
@@ -105,16 +121,16 @@ button.prev-img, button.next-img {
   background-color: #333;
   color: white;
   border: none;
-  padding: 10px 20px; /* Larger buttons */
+  padding: 10px 20px; 
   border-radius: 5px;
-  margin: 0 5px; /* Spacing between buttons */
+  margin: 0 5px; 
 }
 
 /* Project Navigation Buttons */
 button.prev-project, button.next-project {
   cursor: pointer;
   position: absolute;
-  top: calc(50% - 20px); /* Adjust based on button size */
+  top: calc(50% - 20px); 
   transform: translateY(-50%);
   background-color: #333;
   color: white;
@@ -123,6 +139,6 @@ button.prev-project, button.next-project {
   border-radius: 5px;
 }
 
-button.prev-project { left: -120px; } /* Position outside the image area */
-button.next-project { right: -120px; } /* Adjust these values based on actual layout */
+button.prev-project { left: -60px; } 
+button.next-project { right: -60px; } 
 </style>

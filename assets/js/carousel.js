@@ -1,3 +1,4 @@
+// this script is used to create a carousel for the project section
 document.addEventListener('DOMContentLoaded', function() {
   let currentProject = 0;
   const projects = document.querySelectorAll('.project-slide');
