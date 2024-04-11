@@ -4,4 +4,88 @@ title: Home
 permalink: /
 ---
 
-text
+
+<div class="carousel">
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <div class="slide-content">
+      <img src="{{ 'assets\images\kudasai.png' | relative_url }}" alt="Project 1">
+      <div class="text-content">
+        <h2>Project 1</h2>
+        <p>Description for Project 1...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <div class="slide-content">
+      <img src="{{ 'assets\images\webgui_kudasai_thumbnail.png' | relative_url }}" alt="Project 2">
+      <div class="text-content">
+        <h2>Project 2</h2>
+        <p>Description for Project 2...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button onclick="changeSlide(-1)">Previous</button>
+  <button onclick="changeSlide(1)">Next</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+        slide.classList.toggle('active', i === index);
+      });
+    }
+    
+    function changeSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide >= slides.length) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      showSlide(currentSlide);
+    }
+    
+    // Initialize the carousel with the first slide
+    showSlide(currentSlide);
+</script>
+    
+
+<style>
+  .carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .slide {
+    display: none;
+  }
+
+  .slide.active {
+    display: block;
+  }
+
+  .slide-content {
+    position: relative;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+  }
+</style>
