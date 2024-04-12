@@ -12,7 +12,7 @@ permalink: /
   <p>Or check out the Contact page <a href="/contact/">here</a>.</p>
 
 
-<img id="scroll-arrow" src="assets/images/down-purple-arrow.png" alt="Click to scroll down to bottom of home page">
+<img id="scroll-arrow" src="assets/images/index/down-purple-arrow.png" alt="Click to scroll down to bottom of home page">
 
 
 <div class="project-carousel">
@@ -22,12 +22,25 @@ permalink: /
       <div class="image-carousel">
         <!-- Image Slide 1 for Project 1 -->
         <div class="image-slide active">
-          <img src="{{ 'assets/images/kudasai.png' | relative_url }}" alt="Project 1 Image 1">
+          <img src="{{ 'assets/images/index/project_1/kudasai_logo.png' | relative_url }}" alt="Project 1 Image 1">
         </div>
         <!-- Image Slide 2 for Project 1 -->
         <div class="image-slide">
-          <img src="{{ 'assets/images/webgui_kudasai_thumbnail.png' | relative_url }}" alt="Project 1 Image 2">
+          <img src="{{ 'assets/images/index/project_1/webgui_indexer.png' | relative_url }}" alt="Project 1 Image 2">
         </div>
+        <!-- Image Slide 3 for Project 1 -->
+        <div class="image-slide">
+          <img src="{{ 'assets/images/index/project_1/webgui_kairyou.png' | relative_url }}" alt="Project 1 Image 3">
+        </div>
+        <!-- Image Slide 4 for Project 1 -->
+        <div class="image-slide">
+          <img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Project 1 Image 4">
+        </div>
+        <!-- Image Slide 5 for Project 1 -->
+        <div class="image-slide">
+          <img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Project 1 Image 5">
+        </div>
+
       </div>
       <div class="image-controls">
         <button class="prev-img">Previous Image</button>
@@ -41,11 +54,11 @@ permalink: /
       <div class="image-carousel">
         <!-- Image Slide 1 for Project 2 -->
         <div class="image-slide active">
-          <img src="{{ 'assets/images/kudasai.png' | relative_url }}" alt="Project 2 Image 1">
+          <img src="{{ 'assets\images\index\project_1\kudasai_logo.png' | relative_url }}" alt="Project 2 Image 1">
         </div>
         <!-- Image Slide 2 for Project 2 -->
         <div class="image-slide">
-          <img src="{{ 'assets/images/webgui_kudasai_thumbnail.png' | relative_url }}" alt="Project 2 Image 2">
+          <img src="{{ 'assets\images\index\project_1\webgui_kijiku.png' | relative_url }}" alt="Project 2 Image 2">
         </div>
       </div>
       <div class="image-controls">
@@ -53,6 +66,44 @@ permalink: /
         <button class="next-img">Next Image</button>
       </div>
       <p class="project-description">Description of Project 2...</p>
+    </div>
+    <!-- Project Slide 3 -->
+    <div class="project-slide">
+      <h3 class="project-title">Project 3</h3>
+      <div class="image-carousel">
+        <!-- Image Slide 1 for Project 3 -->
+        <div class="image-slide active">
+          <img src="{{ 'assets\images\index\project_1\kudasai_logo.png' | relative_url }}" alt="Project 3 Image 1">
+        </div>
+        <!-- Image Slide 2 for Project 3 -->
+        <div class="image-slide">
+          <img src="{{ 'assets\images\index\project_1\webgui_kijiku.png' | relative_url }}" alt="Project 3 Image 2">
+        </div>
+      </div>
+      <div class="image-controls">
+        <button class="prev-img">Previous Image</button>
+        <button class="next-img">Next Image</button>
+      </div>
+      <p class="project-description">Description of Project 3...</p>
+    </div>
+    <!-- Project Slide 4 -->
+    <div class="project-slide">
+      <h3 class="project-title">Project 4</h3>
+      <div class="image-carousel">
+        <!-- Image Slide 1 for Project 4 -->
+        <div class="image-slide active">
+          <img src="{{ 'assets\images\index\project_1\kudasai_logo.png' | relative_url }}" alt="Project 4 Image 1">
+        </div>
+        <!-- Image Slide 2 for Project 4 -->
+        <div class="image-slide">
+          <img src="{{ 'assets\images\index\project_1\webgui_kijiku.png' | relative_url }}" alt="Project 4 Image 2">
+        </div>
+      </div>
+      <div class="image-controls">
+        <button class="prev-img">Previous Image</button>
+        <button class="next-img">Next Image</button>
+      </div>
+      <p class="project-description">Description of Project 4...</p>
     </div>
     <!-- Main Carousel Controls -->
     <div class="project-controls">
@@ -121,7 +172,7 @@ permalink: /
 
 img {
   max-width: 100%;
-  max-height: 500px; /* Maximum image size */
+  max-height: 500px; 
   height: auto; /* Maintain aspect ratio */
 }
 
