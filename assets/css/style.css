@@ -62,13 +62,14 @@ footer {
   position: fixed;
   bottom: 0; /* Stick to the bottom */
   width: 100%; 
+  left: 0;
   padding: 1rem; 
   text-align: center;
   z-index: 100; /* Ensures footer is above other elements */
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  box-sizing: border-box; 
+  box-sizing: border-box; /* Include padding and border in total width and height */
 }
 
 

@@ -34,11 +34,15 @@ permalink: /
         </div>
         <!-- Image Slide 4 for Project 1 -->
         <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Project 1 Image 4">
+          <img src="{{ 'assets/images/index/project_1/webgui_kaiseki.png' | relative_url }}" alt="Project 1 Image 4">
         </div>
         <!-- Image Slide 5 for Project 1 -->
         <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Project 1 Image 5">
+          <img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Project 1 Image 5">
+        </div>
+        <!-- Image Slide 6 for Project 1 -->
+        <div class="image-slide">
+          <img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Project 1 Image 6">
         </div>
 
       </div>
@@ -162,11 +166,17 @@ permalink: /
 .image-carousel {
   margin: 20px 0;
   text-align: center;
+  height: 500px; /* Set a fixed height */
+  position: relative; /* Add relative positioning */
+  overflow: hidden; /* Hide overflow */
 }
 
 .image-slide {
   display: none;
-  margin-bottom: 20px;
+  position: absolute; /* Absolute positioning for slides */
+  top: 0; /* Align slides at the top */
+  left: 0; /* Align slides at the left */
+  width: 100%; /* Full width slides */
 }
 
 .image-slide.active {
@@ -175,8 +185,9 @@ permalink: /
 
 img {
   max-width: 100%;
-  max-height: 500px; 
+  max-height: 100%; /* Change to 100% */
   height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Contain the whole image */
 }
 
 /* Image Navigation Buttons */
@@ -205,8 +216,9 @@ button.prev-project, button.next-project {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
+  z-index: 1; /* Add a z-index to ensure the buttons are above other elements */
 }
 
-button.prev-project { left: -60px; } 
-button.next-project { right: -60px; } 
+button.prev-project { left: 10px; } /* Adjusted positioning */
+button.next-project { right: 10px; } /* Adjusted positioning */
 </style>
