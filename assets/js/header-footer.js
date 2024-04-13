@@ -1,11 +1,14 @@
-// for the header and footer to be sticky
 window.addEventListener("DOMContentLoaded", adjustPadding);
 window.addEventListener("resize", adjustPadding);
 
 function adjustPadding() {
-  var headerHeight = document.querySelector('header').offsetHeight;
-  var footerHeight = document.querySelector('footer').offsetHeight;
+  let header = document.querySelector('header');
+  let footer = document.querySelector('footer');
+  let bodyStyle = document.body.style;
 
-  document.body.style.paddingTop = headerHeight + 'px';
-  document.body.style.paddingBottom = footerHeight + 'px';
+  let headerHeight = header.offsetHeight;
+  let footerHeight = footer.offsetHeight;
+
+  bodyStyle.paddingTop = `${headerHeight}px`;
+  bodyStyle.paddingBottom = `${footerHeight}px`;
 }

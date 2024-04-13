@@ -8,7 +8,15 @@ scrollArrow.addEventListener('click', function() {
   });
 });
 
-window.addEventListener('scroll', function() {
+function debounce(func, wait) {
+  let timeout;
+  return function() {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, arguments), wait);
+  };
+}
+
+window.addEventListener('scroll', debounce(function() {
   // check if the scroll position is at the top
   if (window.scrollY === 0) {
     // if at the top, show the scroll arrow
@@ -17,4 +25,4 @@ window.addEventListener('scroll', function() {
     // if not at the top, hide the scroll arrow
     scrollArrow.style.display = 'none';
   }
-});
+}, 20));
