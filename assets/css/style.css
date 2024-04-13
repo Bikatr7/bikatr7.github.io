@@ -1,79 +1,102 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-/* Reset default padding and margin for various elements */
-body, h1, h2, h3, p, ul, li {
+/* Reset default padding and margin for all elements */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Apply box-sizing to all elements */
 }
 
+/* Global body styles */
 body {
+  overflow-y: scroll; /* Force vertical scrollbar */
   overflow-x: hidden; /* Prevent horizontal overflow */
   background-color: #121212; 
   color: #ffffff; 
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Style for the header */
 header {
-  background-color: #1c1c1c; 
+  background-color: #1c1c1c;
   display: flex;
-  justify-content: center; 
-  padding: 1rem 0; /* Add some padding above and below the links */
-  position: fixed;
-  top: 0; /* Stick to the top */
-  width: 100%; 
-  z-index: 100; /* Ensures header is above other elements */
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 header nav ul {
-  list-style: none; /* Remove default list styling */
+  list-style: none;
   display: flex;
-  gap: 2rem; /* Space out the navigation items */
+  gap: 2rem;
 }
 
 header nav ul li a {
-  text-decoration: none; /* Remove underline from links */
-  color: #ffffff; 
+  text-decoration: none;
+  color: #ffffff;
   font-weight: bold;
 }
 
 /* Style for the main content area */
 .container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 3rem 2rem;
 }
 
 /* Style for the footer */
 footer {
   background-color: #1c1c1c;
   position: fixed;
-  bottom: 0; /* Stick to the bottom */
-  width: 100%; 
+  bottom: 0;
+  width: 100%;
   left: 0;
-  padding: 1rem; 
+  padding: 1rem;
   text-align: center;
-  z-index: 100; /* Ensures footer is above other elements */
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  box-sizing: border-box; /* Include padding and border in total width and height */
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* Adjust the footer link colors for better visibility */
 footer a {
   color: #ffffff;
+}
+
+/* 404 Page Styles */
+.container-404 {
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+  color: #cccccc;
+}
+
+.container-404 h1 {
+  margin: 50px 0;
+  font-size: 5em;
+  color: #e0e0e0;
+}
+
+.container-404 p {
+  margin: 20px 0;
+  font-size: 1.25em;
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4e80f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #3a5fcd;
 }
