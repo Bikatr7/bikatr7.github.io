@@ -6,117 +6,79 @@ permalink: /
 
 <div class="home-page">
   <h1>Welcome to My Portfolio</h1>
-  <p>On the home page you will find my projects!</p>
-  <p>Scroll down for that!</p>
-  <p>Otherwise see the About Me page <a href="/about/">here</a>.</p>
-  <p>Or check out the Contact page <a href="/contact/">here</a>.</p>
-
+  <p class="top-section">On the home page you will find my projects!</p>
+  <p class="top-section">Scroll down for that!</p>
+  <p class="top-section">Otherwise see the About Me page <a href="/about/">here</a>.</p>
+  <p class="top-section">Or check out the Contact page <a href="/contact/">here</a>.</p>
+</div>
 
 <img id="scroll-arrow" src="assets/images/index/down-purple-arrow.png" alt="Click to scroll down to bottom of home page">
 
 
 <div class="project-carousel">
-    <!-- Project Slide 1 -->
-    <div class="project-slide active">
+  <!-- Project Slide 1 -->
+  <div class="project-slide active">
       <h3 class="project-title">Kudasai: A Japanese Machine Translator and Preprocessor</h3>
       <div class="image-carousel">
-        <!-- Image Slide 1 for Project 1 -->
-        <div class="image-slide active">
-          <img src="{{ 'assets/images/index/project_1/kudasai_logo.png' | relative_url }}" alt="Project 1 Image 1">
-        </div>
-        <!-- Image Slide 2 for Project 1 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_indexer.png' | relative_url }}" alt="Project 1 Image 2">
-        </div>
-        <!-- Image Slide 3 for Project 1 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kairyou.png' | relative_url }}" alt="Project 1 Image 3">
-        </div>
-        <!-- Image Slide 4 for Project 1 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kaiseki.png' | relative_url }}" alt="Project 1 Image 4">
-        </div>
-        <!-- Image Slide 5 for Project 1 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Project 1 Image 5">
-        </div>
-        <!-- Image Slide 6 for Project 1 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Project 1 Image 6">
-        </div>
-
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_1/kudasai_logo.png' | relative_url }}" alt="Kudasai logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_indexer.png' | relative_url }}" alt="Indexer GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kairyou.png' | relative_url }}" alt="Kairyou GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kaiseki.png' | relative_url }}" alt="Kaiseki GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Kijiku GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Kijiku Settings GUI"></div>
       </div>
       <div class="image-controls">
-        <button class="prev-img">Previous Image</button>
-        <button class="next-img">Next Image</button>
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
       </div>
       <p class="project-description">Description of Project 1...</p>
-    </div>
-    <!-- Project Slide 2 -->
-    <div class="project-slide">
-      <h3 class="project-title">Seisen: A Japanese Language TrainerS</h3>
+  </div>
+
+  <!-- Project Slide 2 -->
+  <div class="project-slide">
+      <h3 class="project-title">Seisen: A Japanese Language Trainer</h3>
       <div class="image-carousel">
-        <!-- Image Slide 1 for Project 2 -->
-        <div class="image-slide active">
-          <img src="{{ 'assets/images/index/project_2/seisen_logo.png' | relative_url }}" alt="Project 2 Image 1">
-        </div>
-        <!-- Image Slide 2 for Project 2 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_2/seisen_vocab_test.png' | relative_url }}" alt="Project 2 Image 2">
-        </div>
-        <!-- Image Slide 3 for Project 2 -->
-        <div class="image-slide">
-          <img src="{{ 'assets/images/index/project_2/seisen_vocab_score.png' | relative_url }}" alt="Project 2 Image 3">
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_2/seisen_logo.png' | relative_url }}" alt="Seisen logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_2/seisen_vocab_test.png' | relative_url }}" alt="Vocabulary test interface"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_2/seisen_vocab_score.png' | relative_url }}" alt="Vocabulary score interface"></div>
       </div>
       <div class="image-controls">
-        <button class="prev-img">Previous Image</button>
-        <button class="next-img">Next Image</button>
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
       </div>
       <p class="project-description">Description of Project 2...</p>
-    </div>
-    <!-- Project Slide 3 -->
-    <div class="project-slide">
-      <h3 class="project-title">Project 3</h3>
+  </div>
+
+  <!-- Project Slide 3 -->
+  <div class="project-slide">
+      <h3 class="project-title">Kairyou: Quickly preprocess Japanese text using SpaCy for NLP/NER Tasks</h3>
       <div class="image-carousel">
-        <!-- Image Slide 1 for Project 3 -->
-        <div class="image-slide active">
-          <img src="{{ 'assets\images\index\project_1\kudasai_logo.png' | relative_url }}" alt="Project 3 Image 1">
-        </div>
-        <!-- Image Slide 2 for Project 3 -->
-        <div class="image-slide">
-          <img src="{{ 'assets\images\index\project_1\webgui_kijiku.png' | relative_url }}" alt="Project 3 Image 2">
-        </div>
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_3/kairyou_logo.png' | relative_url }}" alt="Kairyou logo"></div>
       </div>
       <div class="image-controls">
-        <button class="prev-img">Previous Image</button>
-        <button class="next-img">Next Image</button>
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
       </div>
       <p class="project-description">Description of Project 3...</p>
-    </div>
-    <!-- Project Slide 4 -->
-    <div class="project-slide">
+  </div>
+
+  <!-- Project Slide 4 -->
+  <div class="project-slide">
       <h3 class="project-title">Project 4</h3>
       <div class="image-carousel">
-        <!-- Image Slide 1 for Project 4 -->
-        <div class="image-slide active">
-          <img src="{{ 'assets\images\index\project_1\kudasai_logo.png' | relative_url }}" alt="Project 4 Image 1">
-        </div>
-        <!-- Image Slide 2 for Project 4 -->
-        <div class="image-slide">
-          <img src="{{ 'assets\images\index\project_1\webgui_kijiku.png' | relative_url }}" alt="Project 4 Image 2">
-        </div>
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_4/easytl_logo.png' | relative_url }}" alt="Project 4 logo"></div>
       </div>
       <div class="image-controls">
-        <button class="prev-img">Previous Image</button>
-        <button class="next-img">Next Image</button>
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
       </div>
       <p class="project-description">Description of Project 4...</p>
-    </div>
-    <!-- Main Carousel Controls -->
-    <div class="project-controls">
-      <button class="prev-project">Prev Project</button>
-      <button class="next-project">Next Project</button>
-    </div>
+  </div>
+  <div class="project-controls">
+    <button class="prev-project">Prev Project</button>
+    <button class="next-project">Next Project</button>
+  </div>
+
 </div>
 
 <script src="{{ 'assets/js/carousel.js' | relative_url }}"></script>
@@ -132,13 +94,26 @@ permalink: /
   color: #ffffff; 
   }
 
-  #scroll-arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, +90%);
-  cursor: pointer;
-  }
+.home-page h1 {
+  color: #ffffff;
+  text-align: center; 
+}
+
+.home-page .top-section a {
+  color: #4e80f6;
+}
+
+.home-page p.top-section {
+  color: #cccccc;
+}
+
+#scroll-arrow {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, +90%);
+cursor: pointer;
+}
 
 /* General Carousel Styles */
 .project-carousel {
@@ -155,6 +130,10 @@ permalink: /
 
 .project-title {
   text-align: center;
+}
+
+.project-slide {
+  height: 600px; /* Adjust this value as needed */
 }
 
 .project-description {
@@ -216,9 +195,9 @@ button.prev-project, button.next-project {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  z-index: 1; /* Add a z-index to ensure the buttons are above other elements */
 }
 
-button.prev-project { left: 10px; } /* Adjusted positioning */
-button.next-project { right: 10px; } /* Adjusted positioning */
+button.prev-project { left: -60px; } 
+button.next-project { right: -60px; } 
+
 </style>
