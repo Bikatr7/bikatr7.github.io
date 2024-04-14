@@ -202,7 +202,11 @@ color: #ffffff;
   display: block;
 }
 
-.project-title, .project-description {
+.project-title{ 
+  text-align: center;
+}
+
+.project-description {
   text-align: center;
 }
 
@@ -238,10 +242,6 @@ img {
 
 .image-controls {
   text-align: center;
-}
-
-.project-description {
-  padding-top: 40px;
 }
 
 button.prev-img, button.next-img, button.prev-project, button.next-project {
