@@ -64,7 +64,7 @@ permalink: /
 
   <!-- Project Slide 4 -->
   <div class="project-slide">
-      <h3 class="project-title">Project 4</h3>
+      <h3 class="project-title">EasyTL: Easily translate text into any language using a variety of translation APIs</h3>
       <div class="image-carousel">
           <div class="image-slide active"><img src="{{ 'assets/images/index/project_4/easytl_logo.png' | relative_url }}" alt="Project 4 logo"></div>
       </div>
@@ -133,29 +133,29 @@ cursor: pointer;
 }
 
 .project-slide {
-  height: 600px; /* Adjust this value as needed */
+  height: auto;
 }
 
 .project-description {
     text-align: center;
-    padding-top: 20px; 
 }
 
 /* Image Carousel & Slide Styles */
 .image-carousel {
   margin: 20px 0;
   text-align: center;
-  height: 500px; /* Set a fixed height */
-  position: relative; /* Add relative positioning */
-  overflow: hidden; /* Hide overflow */
+  height: 650px; 
+  position: relative; 
+  overflow: hidden; 
 }
 
 .image-slide {
   display: none;
-  position: absolute; /* Absolute positioning for slides */
+  position: absolute; 
   top: 0; /* Align slides at the top */
   left: 0; /* Align slides at the left */
-  width: 100%; /* Full width slides */
+  width: 100%; 
+  height: 100%; 
 }
 
 .image-slide.active {
@@ -164,14 +164,20 @@ cursor: pointer;
 
 img {
   max-width: 100%;
-  max-height: 100%; /* Change to 100% */
   height: auto; /* Maintain aspect ratio */
-  object-fit: contain; /* Contain the whole image */
+  object-fit: scale-down; /* Contain the whole image within the bounds, but do not stretch if smaller */
+  margin: auto;
 }
+
 
 /* Image Navigation Buttons */
 .image-controls {
   text-align: center;
+}
+
+.project-description {
+  text-align: center;
+  padding-top: 40px;
 }
 
 button.prev-img, button.next-img {
@@ -197,7 +203,7 @@ button.prev-project, button.next-project {
   border-radius: 5px;
 }
 
-button.prev-project { left: -60px; } 
-button.next-project { right: -60px; } 
+button.prev-project { left: -120px; } 
+button.next-project { right: -120px; } 
 
 </style>
