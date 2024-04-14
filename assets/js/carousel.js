@@ -1,11 +1,12 @@
-// this script is used to create a carousel for the project section
 document.addEventListener('DOMContentLoaded', function() {
-  let currentProject = 0;
   const projects = document.querySelectorAll('.project-slide');
+  const imageCarousels = document.querySelectorAll('.image-carousel');
   const nextProjectBtn = document.querySelector('.next-project');
   const prevProjectBtn = document.querySelector('.prev-project');
+  const prevImgBtns = document.querySelectorAll('.prev-img');
+  const nextImgBtns = document.querySelectorAll('.next-img');
 
-  const imageCarousels = document.querySelectorAll('.image-carousel');
+  let currentProject = 0;
   let currentImages = Array.from(imageCarousels).map(() => 0);
 
   function showProject(index) {
@@ -19,14 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function changeProject(direction) {
-    currentProject += direction;
-    if (currentProject >= projects.length) currentProject = 0;
-    if (currentProject < 0) currentProject = projects.length - 1;
+    currentProject = (currentProject + direction + projects.length) % projects.length;
     showProject(currentProject);
   }
 
   function showImage(projectIndex, imageIndex) {
-    let images = imageCarousels[projectIndex].querySelectorAll('.image-slide');
+    const images = imageCarousels[projectIndex].querySelectorAll('.image-slide');
     images.forEach((img, idx) => {
       img.style.display = idx === imageIndex ? 'block' : 'none';
       img.classList.toggle('active', idx === imageIndex);
@@ -36,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function changeImage(projectIndex, direction) {
-    let images = imageCarousels[projectIndex].querySelectorAll('.image-slide');
-    let currentImage = currentImages[projectIndex]; 
-    let nextImage = (currentImage + direction + images.length) % images.length;
+    const images = imageCarousels[projectIndex].querySelectorAll('.image-slide');
+    const currentImage = currentImages[projectIndex]; 
+    const nextImage = (currentImage + direction + images.length) % images.length;
     showImage(projectIndex, nextImage);
   }
 
@@ -47,9 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   showProject(currentProject);
 
-  let prevImgBtns = document.querySelectorAll('.prev-img');
-  let nextImgBtns = document.querySelectorAll('.next-img');
-  
   prevImgBtns.forEach((btn, idx) => {
     btn.addEventListener('click', () => changeImage(idx, -1));
   });
