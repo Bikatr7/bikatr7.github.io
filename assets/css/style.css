@@ -288,6 +288,6 @@ button.next-project { right: -120px; }
 /* Remove padding on home page for mobile devices */
 @media only screen and (max-width: 600px) {
   .home-page {
-    padding: 20px;
+    padding: 20%;
   }
 }
