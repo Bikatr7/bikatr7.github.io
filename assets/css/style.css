@@ -271,13 +271,23 @@ button.next-project { right: -120px; }
 
 /* Media Queries */
 
+/* Move scroll arrow to top on mobile devices */
 @media only screen and (max-width: 600px) {
   #scroll-arrow {
     top: 0;
   }
 }
+
+/* Hide project navigation buttons on mobile devices */
 @media only screen and (max-width: 600px) {
   button.prev-project, button.next-project {
     display: none;
+  }
+}
+
+/* Remove padding on home page for mobile devices */
+@media only screen and (max-width: 600px) {
+  .home-page {
+    padding: 0;
   }
 }
