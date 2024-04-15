@@ -3,3 +3,113 @@ layout: default
 title: Home
 permalink: /
 ---
+
+<div class="home-page">
+  <h1>Welcome to My Portfolio</h1>
+  <p class="top-section">On the home page you will find my projects!</p>
+  <p class="top-section">Scroll down for that!</p>
+  <p class="top-section">Otherwise see the About Me page <a href="/about/">here</a>.</p>
+  <p class="top-section">Or check out the Contact page <a href="/contact/">here</a>.</p>
+</div>
+
+<img id="scroll-arrow" src="assets/images/index/down-purple-arrow.png" alt="Click to scroll down to bottom of home page">
+
+
+<div class="project-carousel">
+  <!-- Project Slide 1 -->
+  <div class="project-slide active">
+    <a href="https://github.com/bikatr7/kudasai" target="_blank">
+        <h3 class="project-title">Kudasai: A Japanese Machine Translator and Preprocessor</h3>
+    </a>
+      <div class="image-carousel">
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_1/kudasai_logo.png' | relative_url }}" alt="Kudasai logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_indexer.png' | relative_url }}" alt="Indexer GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kairyou.png' | relative_url }}" alt="Kairyou GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kaiseki.png' | relative_url }}" alt="Kaiseki GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kijiku.png' | relative_url }}" alt="Kijiku GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/webgui_kijiku_settings.png' | relative_url }}" alt="Kijiku Settings GUI"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/kudasai_cmd.jpg' | relative_url }}" alt="Kudasai Command Line Interface"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_1/kudasai_output.jpg' | relative_url }}" alt="Kudasai Output"></div>
+      </div>
+      <div class="image-controls">
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
+      </div>
+      <div class="project-description">
+          <p>Kudasai is a comprehensive solution for enhancing Japanese-English translation.</p>
+          <p>It includes a command line interface and a web-based GUI for preprocessing and translating Japanese text.</p>
+      </div>
+  </div>
+
+  <!-- Project Slide 2 -->
+  <div class="project-slide">
+    <a href="https://github.com/bikatr7/seisen" target="_blank">
+        <h3 class="project-title">Seisen: A Japanese Language Trainer</h3>
+    </a>
+      <div class="image-carousel">
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_2/seisen_logo.png' | relative_url }}" alt="Seisen logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_2/seisen_vocab_test.png' | relative_url }}" alt="Vocabulary test interface"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_2/seisen_vocab_score.png' | relative_url }}" alt="Vocabulary score interface"></div>
+      </div>
+      <div class="image-controls">
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
+      </div>
+      <div class="project-description">
+        <p>Seisen is an excellent CLI tool for training yourself in the Japanese alphabets and vocab.</p>
+        <p>It offers various settings for managing vocabulary and database storage, enhancing user-driven learning experiences.</p>
+    </div>
+  </div>
+
+  <!-- Project Slide 3 -->
+  <div class="project-slide">
+    <a href="https://github.com/bikatr7/kairyou" target="_blank">
+        <h3 class="project-title">Kairyou: Quickly preprocess Japanese text using SpaCy for NLP/NER Tasks</h3>
+    </a>
+      <div class="image-carousel">
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_3/kairyou_logo.png' | relative_url }}" alt="Kairyou logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_3/kairyou_usage.jpg' | relative_url }}" alt="Kairyou Usage"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_3/kairyou_replacement_table.jpg' | relative_url }}" alt="Kairyou Replacement Table"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_3/kairyou_replacement_output.jpg' | relative_url }}" alt="Kairyou Replacement Output"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_3/kairyou_preprocessed_text.jpg' | relative_url }}" alt="Kairyou Preprocessed Text"></div>
+      </div>
+      <div class="image-controls">
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
+      </div>
+      <div class="project-description">
+        <p>Kairyou is a Python package that enhances the preprocessing of Japanese text for NLP tasks, utilizing SpaCy's capabilities.</p>
+        <p>It facilitates the integration of custom preprocessing rules and supports extensive functionalities for handling Japanese text.</p>
+    </div>
+  </div>
+
+  <!-- Project Slide 4 -->
+  <div class="project-slide">
+    <a href="https://github.com/bikatr7/easytl" target="_blank">
+        <h3 class="project-title">EasyTL: Easily translate text into any language using a variety of translation APIs</h3>
+    </a>
+      <div class="image-carousel">
+          <div class="image-slide active"><img src="{{ 'assets/images/index/project_4/easytl_logo.png' | relative_url }}" alt="Project 4 logo"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_4/easytl_usage.jpg' | relative_url }}" alt="EasyTL Usage"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_4/easytl_code_plus_sample.jpg' | relative_url }}" alt="EasyTL Code Plus Sample"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_4/easytl_output.jpg' | relative_url }}" alt="EasyTL Output"></div>
+          <div class="image-slide"><img src="{{ 'assets/images/index/project_4/easytl_code_sample.jpg' | relative_url }}" alt="EasyTL Sample"></div>
+      </div>
+      <div class="image-controls">
+          <button class="prev-img">Previous Image</button>
+          <button class="next-img">Next Image</button>
+      </div>
+      <div class="project-description">
+        <p>EasyTL facilitates text translation by wrapping APIs from OpenAI, DeepL, and Gemini, simplifying their integration.</p>
+        <p>It is designed for devs needing a quick way to implement translation into apps with support for multiple languages.</p>
+    </div>
+  </div>
+  <div class="project-controls">
+    <button class="prev-project">Prev Project</button>
+    <button class="next-project">Next Project</button>
+  </div>
+
+</div>
+
+<script src="{{ 'assets/js/carousel.js' | relative_url }}"></script>
+<script src="{{ 'assets/js/arrow-scroll.js' | relative_url }}"></script>
