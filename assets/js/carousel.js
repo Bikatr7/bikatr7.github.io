@@ -53,4 +53,41 @@ document.addEventListener('DOMContentLoaded', function() {
   nextImgBtns.forEach((btn, idx) => {
     btn.addEventListener('click', () => changeImage(idx, 1));
   });
+
+    // Helper function to detect swipe direction
+    function detectSwipe(el, callback) {
+      let touchstartX = 0;
+      let touchendX = 0;
+  
+      const threshold = 100; // Minimum distance of swipe to trigger the callback
+  
+      el.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX;
+      }, false);
+  
+      el.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX;
+        handleSwipeGesture();
+      }, false);
+  
+      function handleSwipeGesture() {
+        if (touchendX + threshold < touchstartX) {
+          callback('left');
+        }
+        if (touchendX > touchstartX + threshold) {
+          callback('right');
+        }
+      }
+    }
+  
+    projects.forEach((project, index) => {
+      detectSwipe(project, (direction) => {
+        if (direction === 'left') {
+          changeProject(1);
+        } else if (direction === 'right') {
+          changeProject(-1);
+        }
+      });
+    });
+
 });
