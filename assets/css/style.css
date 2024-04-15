@@ -268,3 +268,9 @@ button.prev-project, button.next-project {
 
 button.prev-project { left: -120px; } 
 button.next-project { right: -120px; } 
+
+@media only screen and (max-width: 600px) {
+  button.prev-project, button.next-project {
+    display: none;
+  }
+}
