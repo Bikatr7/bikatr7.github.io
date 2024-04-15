@@ -273,10 +273,9 @@ button.next-project { right: -120px; }
 
 @media only screen and (max-width: 600px) {
   #scroll-arrow {
-    top: 40%;
+    top: 20%;
   }
 }
-
 @media only screen and (max-width: 600px) {
   button.prev-project, button.next-project {
     display: none;
