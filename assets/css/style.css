@@ -274,7 +274,7 @@ button.next-project { right: -120px; }
 /* Move scroll arrow to top on mobile devices */
 @media only screen and (max-width: 600px) {
   #scroll-arrow {
-    top: 0;
+    top: 40%;
   }
 }
 
