@@ -13,11 +13,6 @@ body {
   color: #ffffff; 
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-  display: none;
-}
-
 /* Style for the header */
 header {
   background-color: #1c1c1c;
