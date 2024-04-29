@@ -99,11 +99,13 @@ footer a {
 /* About Page Styles */
 
 .about-page {
+position: relative;
 max-width: 800px; 
 margin: 0 auto; /* This centers the .about-page block */
 padding: 2rem;
 text-align: left;
 color: #ffffff; 
+padding-bottom: 540px;
 }
 
 .about-page h1 {
@@ -125,6 +127,13 @@ color: #ffffff;
   color: #cccccc;
   margin-bottom: 1rem;
 }
+.about-page img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* Contact Page Styles */
 
