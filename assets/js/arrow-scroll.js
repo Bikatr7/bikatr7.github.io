@@ -17,12 +17,21 @@ function debounce(func, wait) {
 }
 
 window.addEventListener('scroll', debounce(function() {
-  // check if the scroll position is at the top
-  if (window.scrollY === 0) {
-    // if at the top, show the scroll arrow
-    scrollArrow.style.display = 'block';
-  } else {
-    // if not at the top, hide the scroll arrow
+  // check if the viewport width is more than 600px (mobile)
+  if (window.innerWidth > 600) 
+  {
+    // check if the scroll position is at the top
+    if (window.scrollY === 0) 
+    {
+      // if at the top, show the scroll arrow
+      scrollArrow.style.display = 'block';
+    } else {
+      // if not at the top, hide the scroll arrow
+      scrollArrow.style.display = 'none';
+    }
+  } 
+  else 
+  {
     scrollArrow.style.display = 'none';
   }
 }, 20));
