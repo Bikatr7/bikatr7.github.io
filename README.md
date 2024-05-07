@@ -31,7 +31,6 @@ To set up a local copy of this website, follow these steps:
 ```shell
 git clone https://github.com/bikatr7/bikatr7.github.io.git
 cd bikatr7.github.io
-## If you're using Jekyll
 bundle install
 bundle exec jekyll serve
 ```

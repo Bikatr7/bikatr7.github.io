@@ -11,6 +11,8 @@ body {
   overflow-x: hidden; /* Prevent horizontal overflow */
   background-color: #121212; 
   color: #ffffff; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 /* Style for the header */
