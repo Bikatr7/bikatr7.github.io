@@ -1,3 +1,14 @@
+.profile-pic {
+  position: absolute;
+  top: 150px;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  z-index: 10;
+  align-self: center;
+}
+
 /* Reset default padding and margin for all elements */
 * {
   margin: 0;
@@ -101,12 +112,12 @@ footer a {
 /* About Page Styles */
 
 .about-page {
-position: relative;
-max-width: 800px; 
-margin: 0 auto; /* This centers the .about-page block */
-padding: 2rem;
-text-align: left;
-color: #ffffff; 
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  color: #ffffff; 
 }
 
 .about-page h1 {
@@ -128,13 +139,6 @@ color: #ffffff;
   color: #cccccc;
   margin-bottom: 1rem;
 }
-.about-page img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 /* Contact Page Styles */
 
