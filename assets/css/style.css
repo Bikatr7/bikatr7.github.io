@@ -98,15 +98,15 @@ footer a {
   background-color: #3a5fcd;
 }
 
-/* About Page Styles */
+/* About Me Page Styles */
 
 .about-page {
-position: relative;
-max-width: 800px; 
-margin: 0 auto; /* This centers the .about-page block */
-padding: 2rem;
-text-align: left;
-color: #ffffff; 
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  color: #ffffff; 
 }
 
 .about-page h1 {
@@ -117,24 +117,65 @@ color: #ffffff;
 .about-page h2 {
   color: #ffffff;
 }
+
 .about-page ul {
   list-style-type: none;
   padding: 0; /* Removes padding for list */
 }
+
 .about-page a {
   color: #4e80f6;
 }
+
 .about-page p, .about-page li {
   color: #cccccc;
   margin-bottom: 1rem;
 }
-.about-page img {
+
+.profile-pic {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 150px;
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  z-index: 10;
+  align-self: center;
 }
 
+/* About This Site Page Styles */
+
+.about-this-site-page {
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  color: #ffffff; 
+}
+
+.about-this-site-page h1 {
+  color: #ffffff;
+  text-align: center; /* This centers the text of h1 elements */
+}
+
+.about-this-site-page h2 {
+  color: #ffffff;
+}
+
+.about-this-site-page ul {
+  list-style-type: none;
+  padding: 0; /* Removes padding for list */
+}
+
+.about-this-site-page a {
+  color: #4e80f6;
+}
+
+.about-this-site-page p, .about-this-site-page li {
+  color: #cccccc;
+  margin-bottom: 1rem;
+}
 
 /* Contact Page Styles */
 
