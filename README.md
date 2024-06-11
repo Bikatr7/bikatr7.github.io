@@ -4,7 +4,11 @@ Welcome to the repository for my personal website, [bikatr7.github.io](https://b
 
 ## A Preface
 
-This website was created for the purpose of having a website that I could use to showcase myself. However it was also created as a learning experience. I hadn't touched HTML, CSS, or JavaScript ever at this point, and didn't want to use a website builder, or some pre-built template, or anything else that would take the learning experience away from me. So I decided to build it from scratch on Jekyll. No theme, no template, no nothing. I like to think it looks decent, but it's no polished shiny template. Maybe one day when I'm a lot more familiar with web development I'll come back and truly showcase what I can do. But for now, this'll do. 
+This website was created for the purpose of having a website that I could use to showcase myself. However it was also created as a learning experience. I hadn't touched HTML, CSS, or JavaScript ever at this point, and didn't want to use a website builder, or some pre-built template, or anything else that would take the learning experience away from me. So I decided to build it from scratch on Jekyll. No theme, no template, no nothing. I like to think it looks decent, but it's no polished shiny template. Maybe one day when I'm a lot more familiar with web development I'll come back and truly showcase what I can do. But for now, this'll do.
+
+For an example of something I've done that is a lot more sophisticated, check out [Kakusui.org](https://kakusui.org). That's a website I built for my company, and it's a lot more polished and professional. But that's because I had a lot more experience when I built that. It uses vite, react, tailwind, and a lot of other cool stuff. This website is just a simple Jekyll website.
+
+Source code for that website can be found [here](https://github.com/kakusui/kakusui-org).
 
 ## Overview
 
