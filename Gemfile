@@ -1,3 +1,7 @@
+## Copyright 2024 Kaden Bilyeu (Bikatr7) (https://github.com/Bikatr7) (https://github.com/Bikatr7/bikatr7.github.io) (https://bikatr7.github.io)
+## Use of this source code is governed by a GNU General Public License v3.0
+## license that can be found in the LICENSE file.
+
 source "https://rubygems.org"
 
 ## jekyll
