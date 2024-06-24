@@ -2,6 +2,10 @@
 
 Welcome to the repository for my personal website, [bikatr7.github.io](https://bikatr7.github.io). This site is a central hub for my online presence and showcases my work, skills, and professional interests.
 
+## Archive Note
+
+This website has been archived and is no longer being maintained. I have moved to a new website, [kadenbilyeu.com](https://kadenbilyeu.com), which is built with React and hosted on Cloudflare Pages. The source code for the new website can be found [here](https://github.com/bikatr7/kadenbilyeu.com).
+
 ## A Preface
 
 This website was created for the purpose of having a website that I could use to showcase myself. However it was also created as a learning experience. I hadn't touched HTML, CSS, or JavaScript ever at this point, and didn't want to use a website builder, or some pre-built template, or anything else that would take the learning experience away from me. So I decided to build it from scratch on Jekyll. No theme, no template, no nothing. I like to think it looks decent, but it's no polished shiny template. Maybe one day when I'm a lot more familiar with web development I'll come back and truly showcase what I can do. But for now, this'll do.
